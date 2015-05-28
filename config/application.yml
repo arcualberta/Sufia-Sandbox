@@ -1,0 +1,8 @@
+development:
+  GOOGLE_CLIENT_ID: 311905720177-vcmhpcj2ss6fabc88hlec3et1nvdibe8.apps.googleusercontent.com
+  GOOGLE_CLIENT_SECRET: hwqVZr38DE70uhrGOH-dQUFQ
+  API_KEY: AIzaSyDzu0TKZpz7z9BbzRu-SN-AvwNUajim4uE
+test:
+  GOOGLE_CLIENT_ID: 311905720177-vcmhpcj2ss6fabc88hlec3et1nvdibe8.apps.googleusercontent.com
+  GOOGLE_CLIENT_SECRET: hwqVZr38DE70uhrGOH-dQUFQ
+  API_KEY: AIzaSyDzu0TKZpz7z9BbzRu-SN-AvwNUajim4uE

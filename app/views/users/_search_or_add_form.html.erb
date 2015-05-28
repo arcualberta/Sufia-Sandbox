@@ -1,0 +1,31 @@
+<div>
+  <div class="well">
+    <div class="row">
+      <!-- search -->
+      <div class="col-md-3">
+      <%= form_tag sufia.profiles_path, method: :get, class: "form-search" do %>
+        <label class="sr-only">Search Users</label>
+        <label class="accessible-hidden">Search Users</label>
+        <%= text_field_tag :uq, params[:uq], class: "q", placeholder: "Search Users", size: '30', type: "text", id: "user_search" %>
+        <%= hidden_field_tag :sort, params[:sort], id: 'user_sort' %>
+        <%= render_hash_as_hidden_fields(params_for_search().except(:uq, :sort, :qt, :page, :utf8)) %>
+        <button type="submit" class="btn btn-primary" id="user_submit"> 
+          <span class="glyphicon glyphicon-search"></span> Go
+        </button>
+      <% end %>
+      </div>
+      <!-- add -->
+      <div class="col-md-3">
+      <%= form_tag "users/add", method: :post, class: "form-search" do %>
+      <label class="sr-only">Add User</label>
+        <label class="accessible-hidden">Add User</label>
+        <%= text_field_tag :add, params[:add], class: "q", placeholder: "Add User", size: '30', type: "email", id: "user_add" %>
+        <button type="submit" class="btn btn-primary" id="user_submit"> 
+          <span class="glyphicon glyphicon-add"></span> Add
+        </button>
+      <% end %>
+      </div>
+
+    </div>
+  </div>
+</div>
